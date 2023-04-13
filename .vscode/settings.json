@@ -1,0 +1,16 @@
+{
+  "editor.defaultFormatter": null,
+  "editor.detectIndentation": false,
+  "editor.tabSize": 2,
+  "editor.formatOnSave": true,
+  "[python]": {
+    "editor.tabSize": 4
+  },
+  "python.formatting.provider": "autopep8",
+  "python.formatting.autopep8Path": "autopep8",
+  "python.formatting.autopep8Args": [
+    "--max-line-length=80",
+    "--indent-size=4",
+    "--experimental"
+  ]
+}

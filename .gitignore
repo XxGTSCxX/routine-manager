@@ -1,0 +1,11 @@
+# See https://help.github.com/articles/ignoring-files/ for more about how to
+# format your ignores.
+
+# Folders ----------------------------------------------------------------------
+node_modules/
+
+# Files ------------------------------------------------------------------------
+.DS_Store
+config.json
+
+# Misc -------------------------------------------------------------------------
