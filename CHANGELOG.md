@@ -6,6 +6,12 @@ The format is based on [Keep a Changelog](https://keepachangelog.com/en/1.0.0/),
 and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0.html).
 
 ---
+## [0.1.0] - 2023/04/09
+
+### Added
+* [#3] Created `RoutineManagerClient` to extend from discord.js's `Client`.
+
+---
 ## [0.0.0] - 2023/04/09
 
 ### Added
