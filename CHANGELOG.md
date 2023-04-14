@@ -10,6 +10,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 * [#3] Created `RoutineManagerClient` to extend from discord.js's `Client`.
+* [Utility] Added type related function helpers to identify if an object/type
+  is derived from one another, the same as one another, etc..
+* [Utility] Added enum helpers so that it'll be easier to define type safe enums
+  down the line.
+* [Logging] Added logging functionalities.
 
 ---
 ## [0.0.0] - 2023/04/09
