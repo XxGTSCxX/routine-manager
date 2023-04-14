@@ -19,12 +19,7 @@ class RoutineManagerClient extends Client {
   }
 
   async #OnInteraction(interaction) {
-    if (interaction.client != this) {
-      Log.Reply(interaction, LogLevel.ERROR, `Interaction's client is not RoutineManager, exiting...`);
-      return;
-    }
-    if (!interaction.isChatInputCommand()) {
-      Log.Reply(interaction, LogLevel.ERROR, `Interation is not a chat input, exiting...`);
+    if (interaction.client != this || !interaction.isChatInputCommand()) {
       return;
     }
     const command = this.commands.get(interaction.commandName);

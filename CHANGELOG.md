@@ -28,6 +28,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * [#1] Created `CompletionStatus` that is meant to emulate an enum class for
   `Actionable`'s completion status.
 * [#1] Created the `Actionable` data class.
+* [#3] Created the `CreateActionable` command for users to create a new
+  `Actionable`.
+* [#3] Created the `ActionableCreator` interation reply to act as the input
+  interface for users to create an `Actionable`.
 
 ---
 ## [0.0.0] - 2023/04/09
