@@ -24,6 +24,8 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 * [Utility] Added enum helpers so that it'll be easier to define type safe enums
   down the line.
 * [Logging] Added logging functionalities.
+* [#1] Created `CompletionStatus` that is meant to emulate an enum class for
+  `Actionable`'s completion status.
 
 ---
 ## [0.0.0] - 2023/04/09
