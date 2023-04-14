@@ -66,11 +66,13 @@ A clear set of definitions for some of the implementations.
     > **Expected Content:**
     > ```json
     > {
-    >   "botToken": "bot-token-here"
+    >   "botToken": "bot-token-here",
+    >   "clientID": "application-id-here"
     > }
     > ```
     > You can reference the following links on how to get each specific data:
     > * [botToken](https://discordjs.guide/creating-your-bot/#using-config-json)
+    > * [clientID](https://discordjs.guide/creating-your-bot/command-deployment.html#guild-commands)
 
 ### Start Bot
 > In your Discord server, you should see the bot come online if you successfully
@@ -81,6 +83,38 @@ Press `F5` or open the "Run and Debug" tab and run the `Launch Bot` command.
 
 #### Command Line
 Run the command `node .` to launch the bot.
+
+### Creating a Command
+Create a `.js` file for a new command in the `src/commands` folder.
+> **NOTE:** Please make sure that your file names are in snake_case because some
+> file systems do not play nice with casing and spaces.
+```javascript
+const { SlashCommandBuilder } = require('discord.js');
+
+
+// Command class should extend SlashCommandBuilder
+class CommandName extends SlashCommandBuilder {
+  constructor(props) {
+    super(props);
+    // Setup command here...
+    this.setName(`command_name`); // Standardise to use snake_case.
+    this.setDescription(`Command description...`);
+    // Any additional command settings here...
+  }
+
+  async execute(interaction) {
+    // Command execution here...
+  }
+}
+
+
+module.exports = {
+  command: new CommandName()  // The export HAS to have the "command" object
+                              // since it's what the client will import.
+}
+```
+
+You can reference `src/commands/reload_command.js` for a working example.
 
 ## Resources
 * [Discord Development](https://discord.com/developers/docs/intro)

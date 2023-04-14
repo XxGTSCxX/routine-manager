@@ -10,6 +10,15 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Added
 * [#3] Created `RoutineManagerClient` to extend from discord.js's `Client`.
+  Handles the setup for the client.
+  * Setup slash command framework with reference to
+    [this](https://discordjs.guide/creating-your-bot/slash-commands.html#creating-slash-commands)
+    but slightly modified.
+  * To add a new command, add the .js file to the "src/commands" folder.
+* Added documentation on how to create a command in
+  [README.md](README.md#creating-a-command).
+* Created the `ReloadCommand` command that allows developers to reload a command
+  without restarting the whole bot.
 * [Utility] Added type related function helpers to identify if an object/type
   is derived from one another, the same as one another, etc..
 * [Utility] Added enum helpers so that it'll be easier to define type safe enums
