@@ -23,9 +23,11 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
   is derived from one another, the same as one another, etc..
 * [Utility] Added enum helpers so that it'll be easier to define type safe enums
   down the line.
+* [Utility] Added helpers for validating uuids.
 * [Logging] Added logging functionalities.
 * [#1] Created `CompletionStatus` that is meant to emulate an enum class for
   `Actionable`'s completion status.
+* [#1] Created the `Actionable` data class.
 
 ---
 ## [0.0.0] - 2023/04/09
